@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customize Order</title>
     <link rel="stylesheet" href="styles.css">
+    <
 </head>
 
 <body>
@@ -28,8 +29,9 @@
 
     <main class="customize_order_main">
         
-
         <form action="order_summary.html">
+            <h3>Order Time Left: <span id="timer">10:00</span></h3>
+
             <div>
                 <img src="img/icecream_banner.jpeg" alt="Banner image for customizing order" id="banner_img">
             </div>
@@ -37,9 +39,9 @@
             <h2>Vanilla Dream</h2>
             <h3>Choose Type:</h3>
 
-            <input type="radio" id="type_cup" name="type" value="Cup">
+            <input type="radio" id="type_cup" name="type" value="Cup" required>
             <label for="type_cup">Cup</label><br><br>
-            <input type="radio" id="type_cone" name="type" value="Cone">
+            <input type="radio" id="type_cone" name="type" value="Cone" required>
             <label for="type_cone">Cone</label><br><br>
             <button type="button" name="update_order" value="submit_icecream_type">Submit Selection</button>
 
@@ -52,7 +54,7 @@
             <label for="topping2">Chocolate Chips</label><br><br>
             <input type="checkbox" id="topping3" name="topping3" value="Whipped Cream">
             <label for="topping3">Whipped Cream</label><br><br>
-            <button type="button" name="update_order" value="submit_toppings">Submit Selection</button>
+            <button type="button" name="update_order" value="submit_icecream_toppings">Submit Selection</button>
 
             <br>
             <button type="submit">Finish Order</button>
@@ -62,6 +64,7 @@
     <footer>
         <p>&copy; 2026 Sweet Scoop Ice Cream.</p>
     </footer>
+    <script src="customize_order.js"></script>
 </body>
 
 </html>
