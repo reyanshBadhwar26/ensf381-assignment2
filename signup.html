@@ -27,9 +27,21 @@
 
     <main class="login_main">
         <div id="login_container">
-            <h2>Welcome Back!</h2>
-            <form id="login_form" action="menu_view.html">
-                <h1>SIGN UP PAGE HERE.</h1>
+            <h1>Signup</h1>
+            <form id="login_form">
+                <label for="signup_username">Username</label><br>
+                <input type="text" id="signup_username" name="signup_username" required><br><br>
+
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" required><br><br>
+
+                <label for="signup_password">Password</label><br>
+                <input type="password" id="signup_password" name="signup_password" required><br><br>
+
+                <label for="signup_confirm_password">Confirm Password</label><br>
+                <input type="password" id="signup_confirm_password" name="signup_confirm_password" required><br><br>
+
+                <button type="submit">Login</button>
             </form>
         </div>
     </main>
