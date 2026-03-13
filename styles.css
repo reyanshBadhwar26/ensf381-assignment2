@@ -163,6 +163,20 @@ form button,
     cursor: pointer;
 }
 
+.signup_button {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    opacity: 0.5;
+}
+
+.signup_button:hover{
+    background-color: #45A049;
+    opacity: 1.0;
+}
+
+
 .menu_main {
     width: 100%;
     max-width: 1100px;
