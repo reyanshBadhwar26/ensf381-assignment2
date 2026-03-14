@@ -28,6 +28,10 @@ function validateLogin(){
         for (let user of users) {
             if (user.username.toLowerCase() === userName.value.toLowerCase()) {
                 if (user.email === password.value) {
+                    message.style.backgroundColor = "#a8d5a2";
+                    message.style.color = "#000";
+                    message.style.padding = "10px";
+                    message.style.borderRadius = "5px";
                     message.textContent = "Login successful! Redirecting...";
                     setTimeout(() => {
                         window.location.href = "menu_view.html";
@@ -36,6 +40,10 @@ function validateLogin(){
                 }
             }
         }
+        message.style.backgroundColor = "#f28c8c";
+        message.style.color = "#000";
+        message.style.padding = "10px";
+        message.style.borderRadius = "5px";
         message.textContent = "Invalid username or password. Please try again.";
     });
 }
