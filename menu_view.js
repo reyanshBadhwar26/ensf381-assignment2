@@ -16,13 +16,11 @@ const actionButtons = document.querySelectorAll(".add_btn, .remove_btn");
 
 actionButtons.forEach(function(button) {
     button.addEventListener("mouseenter", function() {
-        const tile = button.closest(".ice_cream_tile");
-        tile.classList.add("tile_hover");
+        button.classList.add("tile_hover");
     });
 
     button.addEventListener("mouseleave", function() {
-        const tile = button.closest(".ice_cream_tile");
-        tile.classList.remove("tile_hover");
+        button.classList.remove("tile_hover");
     });
 });
 
