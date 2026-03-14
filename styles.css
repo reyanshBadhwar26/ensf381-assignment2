@@ -349,6 +349,10 @@ form button,
     margin: 0 0 18px 0;
 }
 
+#cart_items {
+    width: 100%;
+}
+
 .cart_item {
     width: 100%;
     box-sizing: border-box;
@@ -360,12 +364,12 @@ form button,
     border-radius: 14px;
     padding: 12px 14px;
     margin-bottom: 12px;
+    flex-shrink: 0;
 }
 
 .cart_item_price {
     margin-left: auto;
     text-align: right;
-    min-width: 800px;
 }
 
 .add_btn, .remove_btn {
